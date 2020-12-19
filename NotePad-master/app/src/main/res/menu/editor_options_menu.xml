@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_color"
+        android:icon="@drawable/ic_menu_color"
+        android:title="@string/menu_add"
+        android:alphabeticShortcut='a'
+        android:showAsAction="always" />
+    <item android:id="@+id/menu_save"
+          android:icon="@drawable/ic_menu_save"
+          android:alphabeticShortcut='s'
+          android:title="@string/menu_save"
+          android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/menu_revert"
+          android:icon="@drawable/ic_menu_revert"
+          android:title="@string/menu_revert" />
+    <item android:id="@+id/menu_delete"
+          android:icon="@drawable/ic_menu_delete"
+          android:title="@string/menu_delete"
+          android:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/font_size"
+        android:title="Font Size">
+        <!--子菜单-->
+        <menu>
+            <!--定义一组单选菜单项-->
+            <group>
+                <!--定义多个菜单项-->
+                <item
+                    android:id="@+id/font_10"
+                    android:title="font10"
+                    />
+
+                <item
+                    android:id="@+id/font_16"
+                    android:title="font16" />
+                <item
+                    android:id="@+id/font_20"
+                    android:title="font20" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Font Color"
+        android:id="@+id/font_color"
+        >
+        <menu>
+            <!--定义一组普通菜单项-->
+            <group>
+                <!--定义两个菜单项-->
+                <item
+                    android:title="red"
+                    android:id="@+id/red_font"/>
+                <item
+                    android:title="blue"
+                    android:id="@+id/blue_font"/>
+                <item
+                    android:title="black"
+                    android:id="@+id/black_font"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
